@@ -1,0 +1,11 @@
+---
+  - name: "Hello world"
+    hosts: localhost
+    connection: local 
+    tasks:
+
+    - name: "List files"
+      shell: "ls -lrt"
+      register: "output"
+
+    - debug: var=output.stdout_lines

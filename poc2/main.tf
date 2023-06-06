@@ -9,3 +9,7 @@ variable "input" {
 output "external-input" {
     value = var.input
 }
+
+output "another-output" {
+    value = "testing"
+}
