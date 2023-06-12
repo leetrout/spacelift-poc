@@ -43,5 +43,6 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "PMM Host"
+    Foo  = "Bar"
   }
 }
