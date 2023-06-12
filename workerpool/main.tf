@@ -7,6 +7,26 @@ terraform {
   }
 }
 
+variable "worker_pool_config" {
+  type = string
+}
+
+variable "worker_pool_private_key" {
+  type = string
+}
+
+variable "worker_pool_id" {
+  type = string
+}
+
+variable "worker_pool_security_groups" {
+  type = list(string)
+}
+
+variable "worker_pool_subnets" {
+  type = list(string)
+}
+
 # Copied from https://github.com/spacelift-io/terraform-aws-spacelift-workerpool-on-ec2
 module "opsx_workerpool" {
   source = "github.com/spacelift-io/terraform-aws-spacelift-workerpool-on-ec2?ref=v1.6.0"
