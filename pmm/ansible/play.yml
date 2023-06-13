@@ -1,11 +1,9 @@
 ---
-  - name: "Hello world"
-    hosts: localhost
-    connection: local 
+  - name: "PMM config"
+    hosts: role_PMM
     tasks:
+      - name: "List files"
+        shell: "ls -lrt"
+        register: "output"
 
-    - name: "List files"
-      shell: "ls -lrt"
-      register: "output"
-
-    - debug: var=output.stdout_lines
+      - debug: var=output.stdout_lines
