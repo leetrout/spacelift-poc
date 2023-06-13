@@ -17,7 +17,7 @@ variable "audit_trail_secret" {
 }
 
 module "collector" {
-  source = "github.com/spacelift-io-examples/terraform-aws-spacelift-events-collector"
+  source = "github.com/leetrout/terraform-aws-spacelift-events-collector"
   secret = var.audit_trail_secret
   events_expiration_days = 7
   logs_retention_days = 7
