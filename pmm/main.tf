@@ -42,7 +42,8 @@ resource "aws_instance" "web" {
   subnet_id = var.pmm_subnet
 
   tags = {
-    Name = "PMM Host"
-    Foo  = "Bar"
+    Name    = "PMM Host"
+    Ansible = "yes"
+    Role    = "PMM"
   }
 }
