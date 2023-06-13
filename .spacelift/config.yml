@@ -4,5 +4,6 @@ stacks:
     # The key of is the immutable slug of your stack
     # which you will find in the URL.
     pmm-ansible:
+        runner_image: public.ecr.aws/spacelift/runner-ansible-aws:latest
         environment:
             ANSIBLE_CONFIG: /mnt/workspace/source/pmm/ansible/ansible.cfg
