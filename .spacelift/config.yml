@@ -5,4 +5,4 @@ stacks:
     # which you will find in the URL.
     spacelift-audit-log:
         environment:
-            ANSIBLE_CONFIG: /mnt/workspace/source/ansible.cfg
+            ANSIBLE_CONFIG: /mnt/workspace/source/pmm/ansible/ansible.cfg
