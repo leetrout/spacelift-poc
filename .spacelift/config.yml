@@ -3,6 +3,6 @@ version: "1"
 stacks:
     # The key of is the immutable slug of your stack
     # which you will find in the URL.
-    spacelift-audit-log:
+    pmm-ansible:
         environment:
             ANSIBLE_CONFIG: /mnt/workspace/source/pmm/ansible/ansible.cfg
