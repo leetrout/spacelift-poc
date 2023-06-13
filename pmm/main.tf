@@ -40,6 +40,7 @@ resource "aws_instance" "web" {
   instance_type = "t3.micro"
   vpc_security_group_ids = var.pmm_security_groups
   subnet_id = var.pmm_subnet
+  key_name = "spacelift-ansible"
 
   tags = {
     Name    = "PMM Host"
